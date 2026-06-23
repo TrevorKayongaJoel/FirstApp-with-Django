@@ -9,7 +9,7 @@ class Reservation(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     guest_count = models.IntegerField()
-    reservation_time = models.DateTimeField(auto_now=True)
+    reservation_time = models.DateTimeField(auto_add=True)
     comments = models.CharField(max_length=1000)
-    
+
    

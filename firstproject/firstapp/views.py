@@ -23,3 +23,4 @@ def home(request):
             return HttpResponse("Reservation created successfully!")
         
         return render(request, 'index.html', {'form': form})
+    return render(request, 'index.html', {'form': form})
